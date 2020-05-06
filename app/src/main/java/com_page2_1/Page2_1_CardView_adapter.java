@@ -16,7 +16,7 @@ import androidx.annotation.RequiresApi;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
+
 import com.example.page2_200503_mj.R;
 
 import java.util.List;
@@ -25,11 +25,11 @@ public class Page2_1_CardView_adapter extends RecyclerView.Adapter<Page2_1_CardV
 
     private Page2_1_MainActivity mainActivity;
     private String[] stay = new String[5];  // 하트의 클릭 여부
-    private List<Page2_1_Fragment.Recycler_item> items;  //리사이클러뷰 안에 들어갈 값 저장
+    private List<Recycler_item> items;  //리사이클러뷰 안에 들어갈 값 저장
 
 
     //메인에서 불러올 때, 이 함수를 씀
-    public Page2_1_CardView_adapter(List<Page2_1_Fragment.Recycler_item> items, Page2_1_MainActivity mainActivity) {
+    public Page2_1_CardView_adapter(List<Recycler_item> items, Page2_1_MainActivity mainActivity) {
         this.items=items;
         this.mainActivity = mainActivity;
     }
@@ -47,13 +47,13 @@ public class Page2_1_CardView_adapter extends RecyclerView.Adapter<Page2_1_CardV
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int position) {
-        final Page2_1_Fragment.Recycler_item item=items.get(position);
+        final Recycler_item item=items.get(position);
 
         if(item.getImage() == null){
             Log.i("이미지가 없을때", "널이다 이녀석아,,");
         } else {
             //이미지뷰에 url 이미지 넣기.
-            Glide.with(mainActivity).load(item.getImage()).centerCrop().into(holder.image);
+            //Glide.with(mainActivity).load(item.getImage()).centerCrop().into(holder.image);
         }
 
         holder.title.setText(item.getTitle());

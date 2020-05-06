@@ -8,6 +8,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com_page2_1.Page2_1_Fragment;
 import com_page2_1.Page2_1_MainActivity;
 
 public class MainActivity  extends AppCompatActivity implements View.OnClickListener {
@@ -30,9 +34,8 @@ public class MainActivity  extends AppCompatActivity implements View.OnClickList
     String[] subject_name = {"자연", "역사", "휴양", "체험", "산업", "건축/조형", "문화", "레포츠"};
     Button[] subject = new Button[button_id.length];
 
-    //int[] course_id = {R.id.page2_course_txt1, R.id.page2_course_txt2, R.id.page2_course_txt3, R.id.page2_course_txt4, R.id.page2_course2_txt1, R.id.page2_course2_txt2, R.id.page2_course2_txt3, R.id.page2_course2_txt4};
-//    String[] subject_name = {"자연", "역사", "휴양", "체험", "산업", "건축/조형", "문화", "레포츠"};
-//    Button[] subject = new Button[button_id.length];
+
+
 
 
     @Override
@@ -40,7 +43,6 @@ public class MainActivity  extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        page2_title = (TextView) findViewById(R.id.page2_title);
 
 
         for(int i = 0; i<button_id.length; i++){
@@ -58,7 +60,7 @@ public class MainActivity  extends AppCompatActivity implements View.OnClickList
             if(subject[i].getId() == v.getId()) {
                 Intent intent = new Intent(this, Page2_MainActivity.class);
                 intent.putExtra("subject_name", subject_name[i]);
-                //page2_title.setText(subject_name[i]);
+
                 startActivity(intent);
 
             }

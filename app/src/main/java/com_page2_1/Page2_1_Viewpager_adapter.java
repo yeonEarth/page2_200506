@@ -76,12 +76,12 @@ public class Page2_1_Viewpager_adapter extends RecyclerView.Adapter<Page2_1_View
                  prePosition = position;
 
                  //인터넷 유무 체크
-                 int isNetworkConnect = NetworkStatus.getConnectivityStatus(context);
-                 if(isNetworkConnect == 3) {
-                     Toast.makeText(context, "인터넷 연결이 필요합니다.", Toast.LENGTH_SHORT).show();
-                     determine_API = "delete";
-                 } else
-                     determine_API = "make";
+//                 int isNetworkConnect = NetworkStatus.getConnectivityStatus(context);
+//                 if(isNetworkConnect == 3) {
+//                     Toast.makeText(context, "인터넷 연결이 필요합니다.", Toast.LENGTH_SHORT).show();
+//                     determine_API = "delete";
+//                 } else
+//                     determine_API = "make";
 
              }
              else{
@@ -127,12 +127,12 @@ public class Page2_1_Viewpager_adapter extends RecyclerView.Adapter<Page2_1_View
                 else {
 
                     //인터넷 유무 체크
-                    int isNetworkConnect = NetworkStatus.getConnectivityStatus(context);
-                    if(isNetworkConnect == 3) {
-                        Toast.makeText(context, "인터넷 연결이 필요합니다.", Toast.LENGTH_SHORT).show();
-                        determine_API = "delete";
-                    } else
-                        determine_API = "make";
+//                    int isNetworkConnect = NetworkStatus.getConnectivityStatus(context);
+//                    if(isNetworkConnect == 3) {
+//                        Toast.makeText(context, "인터넷 연결이 필요합니다.", Toast.LENGTH_SHORT).show();
+//                        determine_API = "delete";
+//                    } else
+//                        determine_API = "make";
 
                     selectedItems.delete(prePosition);
                     selectedItems.put(position, true);

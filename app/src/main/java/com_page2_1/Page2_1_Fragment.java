@@ -165,38 +165,6 @@ public class Page2_1_Fragment extends Fragment {
 
 
 
-    //이 클래스는 어댑터와 서로 주고받으며 쓰는 클래스임
-    public class Recycler_item {
-        String image;
-        String title;
-        String contentviewID;
-        String type;
-
-        String getImage() {
-            return this.image;
-        }
-
-        String getTitle() {
-            return this.title;
-        }
-
-        String getContentviewID() {
-            return this.contentviewID;
-        }
-
-        String getType() {
-            return this.type;
-        }
-
-        Recycler_item(String image, String title, String contentviewID, String type) {
-            this.image = image;
-            this.title = title;
-            this.contentviewID = contentviewID;
-            this.type = type;
-        }
-    }
-
-
 
     //앞 액티비티에서 선택된 역과 같은 역을 찾는다.
     private void compareStation(){
