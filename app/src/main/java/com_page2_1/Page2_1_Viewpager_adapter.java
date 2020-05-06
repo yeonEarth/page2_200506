@@ -108,6 +108,7 @@ public class Page2_1_Viewpager_adapter extends RecyclerView.Adapter<Page2_1_View
             @Override
             public void onClick(View v) {
 
+
                 /*
                 * (true = 화면이 보이는 상태) -> 화면을 지워준다.
                 * 'delete' 를 프래그먼트에 전달하면 API를 실행하지 않는다.

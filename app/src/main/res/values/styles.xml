@@ -30,6 +30,20 @@
         <item name="android:fontFamily">@font/notosans_semibold</item>
     </style>
 
+    <style name="course_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">-0.03</item>
+        <item name="android:fontFamily">@font/notosans_extralight</item>
+    </style>
+
+    <style name="courseMore_text">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">-0.03</item>
+        <item name="android:fontFamily">@font/notosans_extralight</item>
+    </style>
+
 
     <style name="cardview_subjectText">
         <item name="android:textSize">11sp</item>
